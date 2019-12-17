@@ -1,2 +1,0 @@
-# ReactRoboFriends
-Created with CodeSandbox
