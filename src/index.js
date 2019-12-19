@@ -5,8 +5,9 @@ import CardList from "./CardList";
 import "tachyons";
 import { robots } from "./robot";
 import registerServiceWorker from "./registerServiceWorker";
+import App from "./App";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<CardList robots={robots} />, rootElement);
+ReactDOM.render(<App />, rootElement);
 
 registerServiceWorker();
