@@ -12,12 +12,16 @@ class App extends Component {
     };
   }
 
-  onSearchChange(event) {
-    console.log(event.target.value);
+  onSearchChange = event => {
+    this.setState({ searchfield: event.target.value });
     const filterRobots = this.state.robots.filter(robots => {
-      return robots.name.toLowerCase().includes(searchfield.toLowerCase());
+      return robots.name
+        .toLowerCase()
+        .includes(this.state.searchfield.toLowerCase());
     });
-  }
+
+    console.log(filterRobots);
+  };
 
   render() {
     return (
